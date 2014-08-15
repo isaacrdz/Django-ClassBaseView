@@ -1,0 +1,24 @@
+	<div class="content">
+		
+
+
+	<!-- form -->
+<form method="post">
+	    <div id="form">
+	        {% csrf_token %}
+		    {{form.as_p}}
+		    <input type="submit">
+		<form>
+		<!-- end form -->
+	</div>
+
+	<!-- styles -->
+	<style>
+		.content
+			{
+				border:1px solid black;
+				margin: 1em auto;
+				padding: 1em;
+				width: 50%;
+			}
+	</style>

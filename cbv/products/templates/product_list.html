@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product List</title>
+</head>
+<body>
+	
+{% for product in object_list  %}
+	<div class="content">		
+		<h2>{{product.name}} </h2>	
+		<p>{{product.content}}</p>
+		<a href="{{product.slug}} ">Read More</a>
+	</div>
+{% endfor %}
+
+	<style>
+	.content
+	{
+		border:1px solid black;
+		margin: 1em auto;
+		padding: 1em;
+		width: 50%;
+	}
+	</style>
+</body>
+</html>
