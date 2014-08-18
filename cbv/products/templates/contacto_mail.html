@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<form id="formulario" method="post"> {% csrf_token %}
+{{ formulario.as_p }}
+<input type="submit" value="submit"/>
+
+
+
+</form>
+	
+</body>
+</html>
